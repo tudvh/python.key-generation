@@ -1,0 +1,15 @@
+{
+  "python.defaultInterpreterPath": ".\\env\\Scripts\\python.exe",
+  "terminal.integrated.profiles.windows": {
+    "PowerShell": {
+      "source": "PowerShell",
+      "icon": "terminal-powershell",
+      "args": ["-NoExit", "-Command", "& { . './env/Scripts/Activate.ps1' }"]
+    },
+    "Command Prompt": {
+      "path": ["${env:windir}\\Sysnative\\cmd.exe", "${env:windir}\\System32\\cmd.exe"],
+      "args": ["/K", ".\\env\\Scripts\\activate.bat"]
+    }
+  },
+  "python.terminal.activateEnvironment": true
+}
